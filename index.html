@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine 💘</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: pink;
+      text-align: center;
+      padding: 40px;
+    }
+    img {
+      width: 250px;
+      border-radius: 20px;
+      margin: 20px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .yes {
+      background-color: red;
+      color: white;
+    }
+    .no {
+      background-color: white;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will you be my Valentine? 💖</h1>
+
+  <img src="https://placekitten.com/300/300" alt="Cute image">
+
+  <br>
+
+  <button class="yes" onclick="yesClicked()">YES ❤️</button>
+  <button class="no" onclick="noClicked()">NO 💔</button>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = "<h1>YAY!!! 💕🥰</h1><p>You just made me very happy ❤️</p>";
+    }
+
+    function noClicked() {
+      alert("Are you sure? 😢");
+    }
+  </script>
+
+</body>
+</html>
